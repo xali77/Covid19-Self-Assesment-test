@@ -33,13 +33,13 @@
         function cou(){
         c2=c2+1;
         if(c2%2==0){
-            ma=ma-4;
+            ma=ma-6;
             document.querySelector("button.butt1").style.background="#EFEFEF";
         }
         else if (c2%2==1)
         {
             document.querySelector("button.butt1").style.background="#D94D4C";
-            ma=ma+4;
+            ma=ma+6;
             
         }
         console.log(ma)
