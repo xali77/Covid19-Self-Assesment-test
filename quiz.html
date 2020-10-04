@@ -80,7 +80,7 @@ padding-right:15px;
   </head>
   <body>
     <div class="top" >
-    <a href="index.html"><img src="Virus.png" class="k1" ></a>
+    <a href="index.html"><img src="/imgs/Virus.png" class="k1" ></a>
     <pre class="topss" style="margin-top: 14px;margin-left: 3px;">
         <a href="index.html">HOME</a>        <a href=sat.html>SELF-ASSESMENT TEST</a>      
     </pre>
@@ -98,11 +98,11 @@ padding-right:15px;
             <p class="k8" style="color: black; position: relative;bottom:340px;">Are you experiancing any of the following symptoms?</p>
             <div class="ab1" id="ab1" style="position: absolute;bottom: 150px; left:340px;">
                 <button class="butt" onclick="fev()" id="butt">Fever</button>
-                <button class="butt1" onclick="cou()" id="butt1">Cough</button>
+                <button class="butt1" onclick="cou()" id="butt1">Dry Cough</button>
                 <button class="butt2" onclick="dif()" id="butt2">Difficulty in breathing</button>
                 <button class="buttt2" onclick="dia()" id="buttt2">Diarrohea</button>
                 <button class="butt3" onclick="loss()" id="butt3">Loss of sense of smell and or taste</button>
-                <button class="butt4" onclick="u()" id="butt4">Fatigue</button>
+                <button class="butt4" onclick="uu()" id="butt4">Fatigue</button>
                 
             </div>
         </div>
@@ -110,12 +110,12 @@ padding-right:15px;
             <img src="r4.png" alt="Second slide">
             <p class="k8" style="color: black; position: relative;bottom:340px;">Have you had any of the following?</p>
             <div class="ab2" id="ab2" style="position: absolute;bottom: 150px; left:443px;">
-            <button class="butt6">Diabetes</button>
-            <button class="butt7">Hypertension</button>
-            <button class="butt8">Lung disease</button>
-            <button class="buttt8">Cancer</button>
-            <button class="butt9">Heart Disease</button>
-            <button class="butt10">Kidney Disorder</button>
+            <button class="butt6" id="butt6" onclick="diab()">Diabetes</button>
+            <button class="butt7" id="butt7" onclick="bp()">Hypertension</button>
+            <button class="butt8" id="butt8" onclick="ld()">Lung disease</button>
+            <button class="buttt8" id="buttt8" onclick="can()">Cancer</button>
+            <button class="butt9" id="butt9" onclick="hd()">Heart Disease</button>
+            <button class="butt10" id="butt10" onclick="kd()">Kidney Disorder</button>
             
         </div>
         </div>
@@ -123,9 +123,9 @@ padding-right:15px;
             <img src="r4.png" alt="Third slide">
             <p class="k8" style="color: black; position: relative;bottom:340px;">Do any of the following apply?</p>
             <div class="ab2" id="ab2" style="position: absolute;bottom: 60px; left:453px;">
-                <button class="butt11">Travelled Long Distance in the last 10 days</button>
-                <button class="butt12">Recently interacted with a person who tested positive </button> <br><br><br><br>
-                <button class="okkk" style="position: absolute; left: 180px; bottom: 3px;">Submit</button>
+                <button class="butt11" id="butt11" onclick="trav()">Travelled Long Distance in the last 10 days</button>
+                <button class="butt12" id="butt12" onclick="posi()">Recently interacted with a person who tested positive </button> <br><br><br><br>
+                <a href="res.html"><button class="okkk" style="position: absolute; left: 180px; bottom: 3px;" onclick="locals()">Submit</button></a>
             
             </div>
             
@@ -140,26 +140,10 @@ padding-right:15px;
         <span class="sr-only">Next</span>
     </a>
 </div>
-<script>
-    var ma=0;
-    console.log(ma)
-    function fev(){
-        ma=ma+4;
-        console.log(ma)
-        document.getElementById("butt").onclick = ma=ma-4;
-        console.log(ma)
-    }
-    function cou(){
-        ma=ma+5;
-        document.getElementById("butt1").onclick = null;
-        console.log(ma)
 
 
-    }
-    
-
-</script>
       
+    <script src="sc.js"></script>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
